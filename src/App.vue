@@ -1,5 +1,43 @@
 <template>
-  <v-app>
+<v-app>
+  <v-card class="mx-auto overflow-hidden hhh" min-height="300">
+    <v-app-bar  color="teal">
+      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+      <v-toolbar-title>Varvara</v-toolbar-title>
+      <v-divider inset vertical class="mx-2"></v-divider>
+      <v-spacer></v-spacer>
+    </v-app-bar>
+
+    <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-list nav dense>
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item to="/alfavit">
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Алфавит</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item to="/audio">
+            <v-list-item-icon>
+              <v-icon>mdi-account</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Account</v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+    <v-main>
+      <v-container grid-list-xs>
+        <router-view />
+      </v-container>
+    </v-main>
+  </v-card>
+</v-app>
+  <!-- <v-app>
     <v-app-bar app color="teal" dark>
       <div class="d-flex align-center">
         <div class="font-weight-bold">
@@ -13,17 +51,16 @@
         <v-btn to="/alfavit" text>
           Алфавит
         </v-btn>
-        <!-- <v-btn to="/audio" text>
-          Audio
-        </v-btn> -->
       </div>
       <v-spacer></v-spacer>
     </v-app-bar>
 
     <v-main>
-      <router-view />
+      <v-container grid-list-xs>
+        <router-view /> 
+      </v-container>
     </v-main>
-  </v-app>
+  </v-app> -->
 </template>
 
 <script>
@@ -32,11 +69,18 @@ export default {
 
   components: {},
 
-  data: () => ({}),
+  data: () => ({
+    drawer: false,
+    group: null,
+  }),
 };
 </script>
 <style lang="scss" scoped>
 .pointer {
   cursor: pointer;
+}
+.hhh{
+  height: 100vh;
+  width: 100vw;
 }
 </style>
