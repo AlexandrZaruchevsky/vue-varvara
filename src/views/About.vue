@@ -1,5 +1,10 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+  <v-card
+    class="ma-4"
+    
+  >
+    <v-card-title>Title</v-card-title>
+  </v-card>
   </div>
 </template>
