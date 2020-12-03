@@ -18,7 +18,7 @@ export default {
   methods: {
     play: function() {
       const track = new Howl({
-        src: [path.join(__dirname, "/audio/", this.buk.sound)],
+        src: [path.join(__dirname, "/audio/alfavitRu/", this.buk.sound)],
         html5: true,
       });
       track.play();

@@ -29,11 +29,11 @@
             <v-list-item-title>Алфавит</v-list-item-title>
           </v-list-item>
 
-          <v-list-item to="/qwe">
+          <v-list-item to="/choice">
             <v-list-item-icon>
               <v-icon>mdi-atom-variant</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Алфавит</v-list-item-title>
+            <v-list-item-title>Choice</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
