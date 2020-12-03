@@ -20,6 +20,11 @@ const routes = [
     name: "Audio",
     component: () => import("../views/Audio.vue")
   },
+  {
+    path: "/*",
+    name: "NotFound",
+    component: ()=>import('../views/NotFound.vue')
+  }
 ];
 
 const router = new VueRouter({

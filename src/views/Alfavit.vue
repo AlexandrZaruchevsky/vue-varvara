@@ -5,7 +5,7 @@
         <span class="white--text">Алфавит</span>
       </v-card-title>
 
-      <v-container class="my-3">
+      <v-container>
         <v-card>
           <v-card-text>
             <bukva class="mx-auto" :buk="alfavit[current]" />
