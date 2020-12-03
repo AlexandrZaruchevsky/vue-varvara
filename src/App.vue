@@ -26,7 +26,6 @@
         <v-btn
             to="/alfavit"
             text
-            transparent
           >
             Алфавит
           </v-btn>
