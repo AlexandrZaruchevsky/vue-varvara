@@ -18,11 +18,11 @@ export default {
 <style lang="scss" scoped>
 
 .alfavit{
-    font-size: 20rem;
+    font-size: 13rem;
     color: white;
     background-color: rgba(0, 0, 224, 0.747);
-    width: 300px;
-    height: 360px;
+    width: 200px;
+    height: 260px;
     border-radius: 5px;
 }
 
@@ -32,7 +32,7 @@ export default {
 
 .alfavit>div>span{
     position: relative;
-    top: 170px;
+    top: 120px;
     
 }
 
